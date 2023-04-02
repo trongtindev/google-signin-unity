@@ -34,7 +34,7 @@ This C++ SDK wraps the iOS SDK, as well as the android SDK, providing a platform
   s.requires_arc = 'src/ios/*'
   s.public_header_files = 'src/include/*.h'
 
-  s.ios.dependency 'GoogleSignIn', '~> 4.1'
+  s.ios.dependency 'GoogleSignIn', '~> 7.0'
 
   s.library = 'c++'
 end
