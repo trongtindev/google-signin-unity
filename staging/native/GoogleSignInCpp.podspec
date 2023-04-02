@@ -23,7 +23,7 @@ This C++ SDK wraps the iOS SDK, as well as the android SDK, providing a platform
   s.source           = { :git => 'https://github.com/TBD/GoogleSignInCpp.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '11.0'
 
   s.cocoapods_version = '>= 1.4.0.beta.2'
   s.static_framework = true
