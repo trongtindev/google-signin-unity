@@ -14,9 +14,6 @@ Assets/GoogleSignIn/Impl/BaseObject.cs
 Assets/GoogleSignIn/Impl/GoogleSignInImpl.cs
 Assets/GoogleSignIn/Impl/NativeFuture.cs
 Assets/GoogleSignIn/Impl/SignInHelperObject.cs
-Assets/Parse/LICENSE
-Assets/Parse/Plugins/Unity.Compat.dll
-Assets/Parse/Plugins/Unity.Tasks.dll
 Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.54.0.dll
 Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.54.0.dll
 Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll

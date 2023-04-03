@@ -1,6 +1,3 @@
-Assets/Parse/Plugins/Unity.Tasks.dll
-Assets/Parse/Plugins/Unity.Compat.dll
-Assets/Parse/LICENSE
 Assets/Plugins/iOS/GoogleSignIn/GoogleSignInAppController.h
 Assets/Plugins/iOS/GoogleSignIn/GoogleSignInAppController.mm
 Assets/Plugins/Android/native-googlesignin-release.aar
