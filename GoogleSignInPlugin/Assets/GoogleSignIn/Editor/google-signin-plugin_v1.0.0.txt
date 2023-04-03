@@ -1,11 +1,11 @@
 Assets/Plugins/iOS/GoogleSignIn/GoogleSignInAppController.h
 Assets/Plugins/iOS/GoogleSignIn/GoogleSignInAppController.mm
 Assets/Plugins/Android/native-googlesignin-release.aar
-Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.54.0.dll
-Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll
-Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.54.0.txt
-Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.54.0.dll
-Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.54.0.dll
+Assets/ExternalDependencyManager/Editor/1.2.175/Google.IOSResolver.dll
+Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll
+Assets/ExternalDependencyManager/Editor/1.2.175/Google.VersionHandlerImpl.dll
+Assets/ExternalDependencyManager/Editor/1.2.175/Google.JarResolver.dll
+Assets/ExternalDependencyManager/Editor/1.2.175/Google.PackageManagerResolver.dll
 Assets/GoogleSignIn/GoogleSignInStatusCode.cs
 Assets/GoogleSignIn/Editor/GoogleSignInDependencies.xml
 Assets/GoogleSignIn/GoogleSignInUser.cs

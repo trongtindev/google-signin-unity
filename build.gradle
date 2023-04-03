@@ -50,7 +50,7 @@ project.ext {
     }
     if (unity_exe == null || unity_exe.isEmpty()) {
         if (os_osx) {
-            unity_exe = '/Applications/Unity/Unity.app/Contents/MacOS/Unity'
+            unity_exe = '/Applications/Unity/Hub/Editor/2021.3.22f1/Unity.app/Contents/MacOS/Unity'
         } else if (os_windows) {
             unity_exe = 'C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.22f1\\Editor\\Unity.exe'
         } else {
@@ -188,6 +188,7 @@ task generate_dependency_xml() {
   doFirst {
     def xmlFile = file("${pluginProjectPath}/${editorDir}/GoogleSignInSupportDependencies.xml")
 
+    xmlFile = ""
     xmlFile << '<?xml version="1.0" encoding="UTF-8" ?>\n'
     xmlFile << '<dependencies>\n'
     xmlFile << '<!-- Internal library dependency generated at build time. -->\n'
@@ -257,8 +258,7 @@ task package_plugin () {
                 "-importPackage", jarresolver_package,
                 "-exportPackage",
                     "Assets/GoogleSignIn",
-                    "Assets/Parse",
-                    "Assets/PlayServicesResolver",
+                    "Assets/ExternalDependencyManager",
                     "Assets/Plugins",
                 "${exportPath}",
                 "-quit"
@@ -372,6 +372,6 @@ def versionedAssetName(filename, version) {
  *  - Build the Google Sign-In Sample package (requires Unity).
  */
 task build_all() {
-        dependsOn ':native-googlesignin:uploadArchives', copy_jarresolver, package_plugin, package_sample
+        dependsOn ':native-googlesignin:uploadArchives', clean, copy_jarresolver, package_plugin, package_sample
 }
 

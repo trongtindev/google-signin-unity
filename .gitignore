@@ -17,7 +17,7 @@ Temp/
 obj/
 
 # Don't check in the resolver
-GoogleSignInPlugin/Assets/PlayServicesResolver/
+GoogleSignInPlugin/Assets/ExternalDependencyManager/
 
 # don't checkin client plists
 GoogleSignInPlugin/Assets/Plugins/iOS/client*.plist*
