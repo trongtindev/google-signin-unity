@@ -23,7 +23,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath 'com.android.tools.build:gradle:4.1.2'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -52,7 +52,7 @@ project.ext {
         if (os_osx) {
             unity_exe = '/Applications/Unity/Unity.app/Contents/MacOS/Unity'
         } else if (os_windows) {
-            unity_exe = 'c:\\program files\\unity\\editor\\unity.exe'
+            unity_exe = 'C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.22f1\\Editor\\Unity.exe'
         } else {
             // Fallback to just unity, and expect it on the path.
             unity_exe = 'unity'
@@ -139,7 +139,7 @@ task copy_jarresolver() {
             }
 
             if (result.exitValue == 0) {
-                println "Downloaded resolver from " + repo
+                println "Downloaded resolver from ${repo}"
                 return
             }
         }
@@ -152,7 +152,7 @@ task import_jarresolver() {
 
     doLast {
         def tree = fileTree(resolverDir) {
-            include "*.unitypackage"
+            include "external-dependency-manager-latest.unitypackage"
         }
         def jarresolver_package = tree.getSingleFile()
         def argv = [
@@ -242,7 +242,7 @@ task package_plugin () {
 
     doLast {
         def tree = fileTree(resolverDir) {
-            include "*.unitypackage"
+            include "external-dependency-manager-latest.unitypackage"
         }
         def jarresolver_package = tree.getSingleFile()
         def argv = [
